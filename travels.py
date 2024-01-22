@@ -1,12 +1,22 @@
-summa = 0
-l = []
+l=[]
+d = {}
 file = open('travels.txt','r')
 for i in file:
     s = str(i)
     parts = s.split(' ')
-    print(parts)
-    if parts[0] == '1':
-        summa += int(parts[4])
-print(summa)
+    if parts[2] in d:
+        d[parts[2]] += int(parts[6])
+    else:
+        d[str(parts[2])]=int(parts[6])
+    
+keys_list = list(d.keys())
+print(len(keys_list))
+print(d)
+       
+
+         
+        
+
+    
 
         
