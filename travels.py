@@ -5,8 +5,8 @@ for i in file:
     s = str(i)
     parts = s.split(' ')
     print(parts)
-    if parts[2] == 'Липки':
-        summa += int(parts[6])
+    if parts[0] == '1':
+        summa += int(parts[4])
 print(summa)
 
         
